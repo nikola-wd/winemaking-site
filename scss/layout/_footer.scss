@@ -1,0 +1,70 @@
+/* footer */
+
+.footer {
+	position: relative;
+	color: #fff;
+	font-size:  .8em;
+	height: 120px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+    	right: 0;
+		width: 308px;
+		height: 235px;
+		background-image: url(img/leaves.png);
+	}
+
+	.flex {
+		justify-content: space-between;
+	}
+
+	&__left {
+		font-size: 112px;
+		line-height: 0.7;
+		font-family: 'Pridi', serif;
+		color: rgba(130, 86, 56, 0.302);
+		font-weight: 300;
+		padding-left: 45px;
+		margin-top: 0;
+	}
+
+
+	&__right {
+		position: relative;
+		align-items: flex-end;
+		margin-right: 53px;
+
+		a, span {
+			color: $c-brand--d;
+			font-size: 26.357px;
+			line-height: 0.869;
+			margin-bottom: 20px;
+		}
+
+		span {
+			margin-bottom: 13px;
+		}
+
+		li {
+			margin-right: 20px;
+		}
+
+		a {
+			margin-right: 15px;
+		}
+
+		.menu--footer li:after {
+		    content: '';
+		    position: absolute;
+		    bottom: 20px;
+		    width: 4px;
+		    height: 4px;
+		    border-radius: 50%;
+		    background: $c-brand--d;
+		}
+
+	}
+
+}

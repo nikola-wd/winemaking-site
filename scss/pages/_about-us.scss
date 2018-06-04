@@ -1,0 +1,81 @@
+/* About Us */
+
+.about-us {
+  padding-right: 47px;
+  position: relative;
+
+  &__img-main {
+    margin-right: 40px;
+    margin-top: -32px;
+  }
+
+  &__img-bottom {
+    position: absolute;
+    right:  -27px;
+    bottom: -48px;
+    transform: rotate(7deg);
+    width: 305px;
+    height: 294px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: -2.4px 6.6px 13px 0 rgba(0, 0, 0, 0.3);
+
+    img {
+      width: 100%;
+    }
+
+    &--title {
+      text-align: center;
+      padding-top: 8px;
+    }
+  }
+
+  h2 {
+    margin-top: 32px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-family: $font-2;
+    line-height: 1.286;
+    letter-spacing: 0.1px;
+  }
+
+  span {
+    letter-spacing: -.36px;
+  }
+
+  .a-votre-sante {
+    font-size: 25px;
+    font-weight: 500;
+    padding-right: 280px;
+    margin: 30px 0 25px 0;
+  }
+
+  .read-more,
+  .read-less {
+    color: $c-brand;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top:  -25px;
+    width: 160px;
+    height: 160px;
+    background-image: url(img/grapes-badge.png);
+
+  }
+}
+
+

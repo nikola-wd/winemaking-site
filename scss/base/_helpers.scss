@@ -1,0 +1,41 @@
+/* helpers */
+
+// FLEX HELPERS
+.flex { display: flex; }
+.flex-justify--center { justify-content: center;}
+.flex-justify--between { justify-content: space-between;}
+.flex-justify--around { justify-content: space-around;}
+.flex-align--center { align-items: center;}
+.flex-align--start { align-items: flex-start;}
+
+
+// MARGIN HELPERS
+.mb0 { margin-bottom: 0; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+
+
+// FIR IMAGES OR BLOCKS THAT ARE HYPERLINKS
+.db { display: block; }
+.dib { display: inline-block; }
+
+
+
+
+// link underline decoration helpers
+.tdu { text-decoration: underline; }
+.htdu:hover { text-decoration: underline !important; }
+
+
+
+
+// bg-color helper classes
+.bg-brand { background-color: $c-brand; }
+
+
+
+// txt-color helper classes
+.c-brand  { color: $c-brand; }

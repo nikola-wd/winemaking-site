@@ -1,0 +1,51 @@
+//color variables
+$c-brand     : #925202;
+$c-brand--d  : #513a21;
+
+$c-txt    : #392e2b;
+$c-sec    : #392e2b;
+// $c-ter    : #392e2b;
+$c-gray   : #666;
+
+
+
+//fonts variables
+$font-def : 'Alegreya Sans SC', sans-serif;
+$font-2 : 'Alegreya Sans', sans-serif;
+$font-3 : 'Alegreya SC', serif;
+$font-4 : 'Pridi', serif;
+
+
+
+
+
+
+
+
+//extends
+%clearfix {
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after { clear: both; }
+}
+
+
+%flex { display: flex; }
+
+
+%con-abs {
+	content: "";
+	position: absolute;
+}
+
+
+%bgncc {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
