@@ -1,3 +1,7 @@
+.dropdown-menu li:not(.dropdown-title):before, .dropdown-menu li:not(.dropdown-title):after {
+  content: "";
+  position: absolute; }
+
 /* base */
 ::-moz-selection {
   background-color: #666;
@@ -202,19 +206,52 @@ ul {
   box-shadow: 0;
   left: 0 !important;
   right: auto;
-  background-color: #925202;
-  -ms-transform: translateY(3px);
-      transform: translateY(3px);
+  background-color: #fff;
+  -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
+  left: -20px !important;
+  border: none;
+  padding: 25px;
   border-radius: 0;
-  padding-bottom: 0; }
-  .dropdown-menu li a {
-    font-size: 12px;
-    color: #fff !important;
-    text-align: left;
-    padding: 10px 10px;
-    background-color: #925202 !important; }
-    .dropdown-menu li a:hover {
-      background-color: #513a21 !important; }
+  min-width: 200px; }
+  .dropdown-menu li:not(.dropdown-title) {
+    border-left: 1px solid #925202 !important;
+    padding: 10px 0 10px 10px; }
+  .dropdown-menu li {
+    position: relative; }
+    .dropdown-menu li:not(.dropdown-title):before, .dropdown-menu li:not(.dropdown-title):after {
+      left: 0;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 5px 6px; }
+    .dropdown-menu li:not(.dropdown-title):before {
+      border-color: transparent transparent transparent #925202; }
+    .dropdown-menu li:not(.dropdown-title):after {
+      border-color: transparent transparent transparent #fff;
+      -ms-transform: translate(-2px, -50%);
+          transform: translate(-2px, -50%); }
+    .dropdown-menu li a, .dropdown-menu li span {
+      font-size: 12px;
+      text-align: left;
+      padding: 2px 5px;
+      color: #333;
+      font-weight: 600; }
+    .dropdown-menu li.active a {
+      background-color: transparent !important;
+      color: #925202 !important; }
+    .dropdown-menu li.dropdown-subtitle:before, .dropdown-menu li.dropdown-subtitle:after {
+      display: none; }
+    .dropdown-menu li.dropdown-subtitle span {
+      display: block;
+      background-color: #925202 !important;
+      color: #fff !important; }
+
+.dropdown-title {
+  border-bottom: 1px solid #925202; }
 
 /* footer */
 .footer {
